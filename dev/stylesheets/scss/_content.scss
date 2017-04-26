@@ -1,0 +1,119 @@
+.flex-section{
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  flex-direction: column;
+  background-color: white;
+  align-items: flex-start;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.itens-center{
+  align-items: center;
+  flex-direction: row;
+}
+.flex-section > .title{
+  display: block;
+  margin: 0 auto;
+  color: $primary-color;
+}
+.flex-section > .title:after{
+  border-bottom-color: $secondary-color;
+}
+.flex-section-row{
+  width: 95%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  align-content: center;
+  padding-top: 10px;
+}
+.flex-section-item{
+  box-sizing: border-box;
+  flex-basis: 1;
+  width: 25%;
+  height: auto;
+  padding: 20px 0 20px 0;
+  border-radius: 5px;
+  background-color: #ddd;
+  margin: 10px;
+}
+.flex-section-item-half{
+  width: 50%;
+  height: auto;
+}
+.flex-section-item.transparent{
+  background-color: transparent;
+}
+.flex-section-item > img, .flex-section-description{
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.flex-section-item > img{
+  border: 1px solid #eee;
+}
+.flex-section-description > p{
+  padding-top: 20px;
+  line-height: 1.5;
+}
+.flex-section-text, .flex-section-image{
+  margin:  0px 50px 0px 50px;
+}
+.flex-section-title{
+  font-size: 3em;
+  color: $font-color;
+}
+.flex-section-subtitle{
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.title-left{
+  @extend .flex-section-title;
+  padding-left: 10px;
+  border-left: 5px solid $primary-blue;
+}
+.title-right{
+  @extend .flex-section-title;
+  padding-right: 10px;
+  border-right: 5px solid $primary-blue;
+}
+.flex-section-text{
+  width: 80%;
+  margin-top: 20px;
+  align-self: center;
+  line-height: 2;
+  color: #333;
+}
+.flex-section-text > p > span{
+  @extend .flex-section-subtitle;
+  color: $secondary-blue;
+}
+.title{
+  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 100px;
+}
+.title:after{
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 10px;
+  border-bottom: 3px solid #333;
+  margin-bottom: 20px;
+}
+.subtitle{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: $secondary-color;
+}

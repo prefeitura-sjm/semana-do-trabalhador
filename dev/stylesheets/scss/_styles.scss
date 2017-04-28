@@ -14,3 +14,113 @@
   width: 100%;
   height: 100%;
 }
+#programacao{
+  background-image: url('../images/bgtrab.png');
+}
+#video-prefeito{
+  background-image: url('../images/bg_azul.jpeg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#atracoes{
+  width: 100%;
+  background-image: url('../images/fundo_grande.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#video-prefeito{
+  min-height: 50vh;
+  height: auto;
+}
+#video-prefeito > article {
+  align-self: flex-start;
+}
+#video-prefeito > .embed-container{
+  width: 50%;
+  margin-right: 100px;
+  padding-bottom: 30%;
+}
+#video-prefeito > .embed-container > iframe{
+  width: 100%;
+  height: 50vh;
+  margin-top: 12%;
+}
+#video-prefeito > article >  .flex-section-title{
+  font-size:4em;
+  color:white;
+  font-weight: bold;
+}
+#abertura{
+  background-image: url('../images/banner_zumba.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#culturais{
+  background-image: url('../images/orquestra.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#diogo{
+  background-image: url('../images/bg_diogo.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#atracoes h1, #atracoes p{
+  color: white;
+}
+#programacao{
+  background-color: #eee;
+}
+.small{
+  min-height: 30vh;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+.small .title{
+  font-size: 2em;
+  color: $font-color;
+  border: 0px;
+  padding-top: 0px;
+}
+.small .title:after{
+  display: none;
+}
+.arrow:after{
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid $color-white;
+  position: absolute;
+    top: 100%;
+}
+.title.color-orange{
+  color: $third-color;
+  font-size: 4em;
+  line-height: 1.5em;
+  border-bottom: 2px solid $primary-color;
+}
+.color-orange:after{
+  display: none;
+}
+.color-white{
+  color: $color-white;
+}
+.flex-section-title.color-white{
+  padding-top: 40px;
+  font-size: 4em;
+}
+.big-text{
+  font-size: 2em;
+}
+.patrocinio{
+  width: 20%;
+}

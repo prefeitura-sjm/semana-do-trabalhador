@@ -14,7 +14,7 @@ module.exports = (grunt) => {
            files: [{
              expand: true,                  // Enable dynamic expansion
              cwd: 'dev/',                   // Src matches are relative to this path
-             src: ['images/*.{png,jpg,gif}'],   // Actual patterns to match
+             src: ['images/*.{png,jpg,gif,jpeg,JPG,PNG}'],   // Actual patterns to match
              dest: 'public/'                  // Destination path prefix
            }]
          }
@@ -45,7 +45,7 @@ module.exports = (grunt) => {
             authKey: 'key1'
           },
           src: 'public',
-          dest: '/public_html/semana-do-trabalhador'
+          dest: '/public_html/semanadotrabalhador'
         }
       },
       cssmin: {

@@ -10,8 +10,13 @@
   padding-bottom: 50px;
 }
 .itens-center{
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: row;
+}
+.itens-center-column{
+  @extend .itens-center;
+  flex-direction: column;
 }
 .flex-section > .title{
   display: block;
@@ -47,7 +52,7 @@
 .flex-section-item.transparent{
   background-color: transparent;
 }
-.flex-section-item > img, .flex-section-description{
+.flex-section-item img, .flex-section-description{
   width: 90%;
   height: auto;
   display: block;
@@ -63,9 +68,12 @@
 .flex-section-text, .flex-section-image{
   margin:  0px 50px 0px 50px;
 }
+.flex-section-image{
+  width: 40%;
+}
 .flex-section-title{
   font-size: 3em;
-  color: $font-color;
+  color: $primary-color;
 }
 .flex-section-subtitle{
   padding-top: 20px;
@@ -74,24 +82,35 @@
 }
 .title-left{
   @extend .flex-section-title;
-  padding-left: 10px;
-  border-left: 5px solid $primary-blue;
+  text-align: left;
 }
 .title-right{
   @extend .flex-section-title;
-  padding-right: 10px;
-  border-right: 5px solid $primary-blue;
+  text-align: right;
+}
+.no-border:after{
+  display: none;
 }
 .flex-section-text{
-  width: 80%;
+  width: 90%;
   margin-top: 20px;
   align-self: center;
   line-height: 2;
   color: #333;
 }
+article.flex-section-text{
+  width: 50%;
+}
 .flex-section-text > p > span{
   @extend .flex-section-subtitle;
   color: $secondary-blue;
+}
+.flex-section-text.pull-left{
+  align-self: center;
+}
+.flex-section-text.pull-right{
+  align-self: center;
+  margin-right: 100px;
 }
 .title{
   text-align: center;
